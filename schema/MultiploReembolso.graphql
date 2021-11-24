@@ -1,0 +1,15 @@
+type MultiploReembolso {
+  id: Int!
+  nome: String!
+  multiplicador: Float!
+}
+
+input MultiploReembolsoInput {
+  nome: String!
+  multiplicador: Float!
+}
+
+input MultiploReembolsoFiltro {
+  id: Int
+  nome: String
+}

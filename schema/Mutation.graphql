@@ -1,0 +1,36 @@
+type Mutation {
+  # Virgula opcional
+  # Mutations de Usuario
+
+  registrarUsuario(dados: UsuarioRegistrarInput!): Usuario!
+
+  novoUsuario(dados: UsuarioInput!): Usuario!
+
+  excluirUsuario(filtro: UsuarioFiltro!): Usuario
+
+  alterarUsuario(filtro: UsuarioFiltro!, dados: UsuarioInput!): Usuario
+
+  # Mutations de Perfil
+  novoPerfil(dados: PerfilInput!): Perfil!
+
+  excluirPerfil(filtro: PerfilFiltro!): Perfil
+
+  alterarPerfil(filtro: PerfilFiltro!, dados: PerfilInput!): Perfil
+
+  # Mutations de Operadora
+  novaOperadora(dados: OperadoraInput!): Operadora!
+
+  excluirOperadora(filtro: OperadoraFiltro!): Operadora
+
+  alterarOperadora(filtro: OperadoraFiltro!, dados: OperadoraInput!): Operadora
+
+  # Mutations de MultiploReembolso
+  novoMultiploReembolso(dados: MultiploReembolsoInput!): MultiploReembolso!
+
+  excluirMultiploReembolso(filtro: MultiploReembolsoFiltro!): MultiploReembolso
+
+  alterarMultiploReembolso(
+    filtro: MultiploReembolsoFiltro!
+    dados: MultiploReembolsoInput!
+  ): MultiploReembolso
+}

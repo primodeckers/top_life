@@ -1,0 +1,7 @@
+#import Plano from 'Plano.graphql'
+#import Operadora from 'Operadora.graphql'
+#import FaixaEtaria from 'FaixaEtaria.graphql'
+#import MultiploReembolso from 'MultiploReembolso.graphql'
+#import Usuario, Perfil from 'Usuario.graphql'
+#import Query from 'Query.graphql'
+#import Mutation from 'Mutation.graphql'

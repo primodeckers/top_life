@@ -1,0 +1,21 @@
+# Pontos de entrada da sua API!
+type Query {
+  login(dados: UsuarioLoginInput!): Usuario
+  usuarios: [Usuario]
+  usuario(filtro: UsuarioFiltro!): Usuario
+
+  perfis: [Perfil]
+  perfil(filtro: PerfilFiltro!): Perfil
+
+  operadoras: [Operadora]
+  operadora(filtro: OperadoraFiltro!): Operadora
+
+  faixasEtarias: [FaixaEtaria]
+  faixaEtaria(filtro: FaixaEtariaFiltro!): FaixaEtaria
+
+  multiplosReembolsos: [MultiploReembolso]
+  multiploReembolso(filtro: MultiploReembolsoFiltro!): MultiploReembolso
+
+  planos: [Plano]
+  plano(filtro: PlanoFiltro!): Plano
+}

@@ -1,0 +1,17 @@
+type FaixaEtaria {
+  id: Int
+  de: Int!
+  ate: Int!
+  descricao: String!
+}
+
+input FaixaEtariaInput {
+  de: Int!
+  ate: Int!
+  descricao: String!
+}
+
+input FaixaEtariaFiltro {
+  id: Int
+  descricao: String
+}

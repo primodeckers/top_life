@@ -1,0 +1,17 @@
+type Operadora {
+  id: Int
+  nome: String!
+  rotulo: String!
+  descricao: String!
+}
+
+input OperadoraInput {
+  nome: String
+  rotulo: String
+  descricao: String
+}
+
+input OperadoraFiltro {
+  id: Int
+  nome: String
+}

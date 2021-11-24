@@ -1,0 +1,46 @@
+type Plano {
+  id: Int!
+  nome: String!
+  codigo_ans: String!
+  descricao: String!
+  segmentacao: Segmentacao!
+  abrangencia_geografica: AbrangenciaGeografica!
+  acomodacao: Acomodacao!
+  coparticipacao: Coparticipacao!
+  valor: Float!
+  operadora: [Operadora]
+  faixa_etaria: [FaixaEtaria]
+  multiplo_reembolso: [MultiploReembolso]
+}
+
+input PlanoInput {
+  nome: String
+  descricao: String
+}
+
+input PlanoFiltro {
+  id: Int
+  nome: String
+}
+
+enum Segmentacao {
+  HOSPITALAR
+  HOSPITALAR_OBSTETRICIA
+  AMBULATORIAL
+}
+
+enum AbrangenciaGeografica {
+  NACIONAL
+  MUNICIPAL
+  REGIONAL
+}
+
+enum Acomodacao {
+  COLETIVA
+  INDIVIDUAL
+}
+
+enum Coparticipacao {
+  SIM
+  NAO
+}
